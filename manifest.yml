@@ -1,0 +1,10 @@
+applications:
+- name: policy_mgmt-master
+  buildpack: staticfile_buildpack
+  disk_quota: 1G
+  instances: 1
+  memory: 256M
+  routes:
+  - route: mm-policy_mgmt-master.cfapps.io
+  stack: cflinuxfs2
+  path: dist
